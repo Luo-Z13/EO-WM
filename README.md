@@ -1,6 +1,7 @@
-<p align="center">
-  <b>EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting</b>
-</p>
+
+<h3 align="center">
+  A Physically Informed World Model for Probabilistic Earth Observation Forecasting
+</h3>
 
 <p align="center">
   <a href="https://arxiv.org/pdf/2606.27277">
@@ -11,7 +12,6 @@
 <p align="center">
   <a href="https://arxiv.org/pdf/2606.27277">Preprint</a> ·
   <a href="#benchmarks">Benchmarks</a> ·
-  <a href="#quick-start">Quick Start</a> ·
   <a href="#evaluation">Evaluation</a> ·
   <a href="#citation">Citation</a>
 </p>
@@ -55,7 +55,7 @@ EO-WM uses a physically informed latent video diffusion architecture for multisp
 
 This release contains benchmark metadata and evaluation examples only. The CSV paths are relative to a local EarthNet2021 root, e.g. `extreme_test_split/context/<tile>/...npz`.
 
-## Quick Start
+## Evaluation
 
 ### 1. Download EarthNet2021
 
@@ -100,9 +100,10 @@ pip install numpy pandas scipy einops omegaconf tqdm pillow earthnet
 
 Install PyTorch separately according to your CUDA version.
 
-## Evaluation
 
-### Extreme Summer
+### 3. Inference
+
+#### Extreme Summer
 
 ```bash
 cd /path/to/EO-WM
@@ -120,7 +121,7 @@ python script/earthformer_eval_extreme_summer_bench.py \
 
 Main outputs: `metrics.json`, `per_sample_metrics.csv`, and optional visualizations under `vis/`.
 
-### Seasonal Matched-Pair
+#### Seasonal Matched-Pair
 
 ```bash
 cd /path/to/EO-WM
@@ -138,7 +139,7 @@ python script/earthformer_eval_seasonal_bench.py \
 
 The seasonal script expands the pair CSV into per-window inference samples internally. Main outputs: `metrics.json`, `per_pair_metrics.csv`, and `per_window_metrics.csv`.
 
-## Metrics
+#### Metrics
 
 - **Standard metrics**: EarthNetScore (ENS), Pixel-MAE (P-MAE), and NDVI-MAE (N-MAE).
 - **Extreme Summer**: Trough NDVI-MAE (TN-MAE) and Drop Amplitude Error (DAE), including low/mid/high severity-bin summaries.
@@ -160,7 +161,7 @@ The model-forward code is Earthformer-specific, while the metric logic can be ad
 ```
 
 
-For questions, please contact `luojunwei@whu.edu.cn`.
+For questions, please contact `luojunwei@whu.edu.cn` or `luojw913@hku.hk`.
 
 ## Acknowledgements
 
