@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2606.27277">
+  <a href="https://arxiv.org/pdf/2606.27277">
     <img src="https://img.shields.io/badge/arXiv-2606.27277-b31b1b.svg" alt="arXiv">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2606.27277">Preprint</a> ·
+  <a href="https://arxiv.org/pdf/2606.27277">Preprint</a> ·
   <a href="#benchmarks">Benchmarks</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#evaluation">Evaluation</a> ·
@@ -146,20 +146,6 @@ The seasonal script expands the pair CSV into per-window inference samples inter
 
 The model-forward code is Earthformer-specific, while the metric logic can be adapted to any model that produces aligned EarthNet2021 target-window predictions.
 
-## Repository
-
-```text
-EO-WM/
-|-- figures/
-|   |-- Intro.png
-|   `-- benchmark.png
-|-- benchmark_csv/
-|   |-- extreme_summer_benchmark.csv
-|   `-- seasonal_pairs_benchmark.csv
-`-- script/
-    |-- earthformer_eval_extreme_summer_bench.py
-    `-- earthformer_eval_seasonal_bench.py
-```
 
 ## Citation
 
