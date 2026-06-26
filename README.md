@@ -1,16 +1,21 @@
-# EO-WM
-
 <p align="center">
   <b>EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting</b>
 </p>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2606.27277">
+    <img src="https://img.shields.io/badge/arXiv-2606.27277-b31b1b.svg" alt="arXiv">
+  </a>
+</p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2606.27277">Preprint</a> ·
   <a href="#benchmarks">Benchmarks</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#evaluation">Evaluation</a> ·
   <a href="#citation">Citation</a>
 </p>
+
 
 
 ## News
@@ -163,7 +168,7 @@ EO-WM/
 @article{luo2026eowm,
   title={EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting},
   author={Luo, Junwei and Yuan, Shuai and Yang, Zhenya and Li, Yansheng and Liu, Zhe and Zhao, Hengshuang},
-  journal={arXiv preprint arxiv:xxxx.xxxxx},
+  journal={arXiv preprint arxiv:2606.27277},
   year={2026}
 }
 ```
